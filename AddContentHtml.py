@@ -9,8 +9,9 @@ for name in os.listdir('.'):
         if not name.startswith('__'):
             if os.path.isdir(name):
                 vidfile = os.listdir(currentpath + '/' + name)[0] #ugly but easy
-                formato = vidfile.split('.')[-1]
-                tipo = 'video/' + formato
+                vidformat = vidfile.split('.')[-1]
+               
+                htmltipe = 'video/' + vidformat
                 contenuto = open(currentpath + '/' + name + '/' + 'content.html' , 'w')
                 contenuto.write(
                 '''
@@ -25,6 +26,6 @@ for name in os.listdir('.'):
                 
                 </body>
                 </html>
-                '''.format(name, 'video.' + formato, tipo)                       
+                '''.format(name, 'video.' + vidformat, htmltipe)                       
                 )
                 

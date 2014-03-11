@@ -4,6 +4,8 @@ import os
 import sys
 import shutil
 
+
+#unused
 def IsIndexed(path):
     for name in os.listdir(path):
         if name == 'indexed.dat':
@@ -19,15 +21,15 @@ indexfile.write('''
         <body>
         ''')
 
-for cartella in os.listdir('.'):
-    if os.path.isdir(currentpath + '/' + cartella):
-        if not os.path.isfile(currentpath + '/' + cartella + '/indexed.dat'):
-            if not cartella.startswith('.'):
-                formatcartella = cartella.replace(' ', '%20')
+for TheDirectory in os.listdir('.'):
+    if os.path.isdir(currentpath + '/' + TheDirectory):
+        if not os.path.isfile(currentpath + '/' + TheDirectory + '/indexed.dat'):
+            if not TheDirectory.startswith('.'):
+                formatcartella = TheDirectory.replace(' ', '%20')
                 formatcartella = formatcartella.replace('[', '%5B')
                 formatcartella = formatcartella.replace(']', '%5D')
                 indexfile.write('''<a href="{0}">{1}</a>
-            <br>'''.format('http://192.168.1.150/video/' + cartella + '/' + 'content.html', cartella))
+            <br>'''.format('http://192.168.1.150/video/' + TheDirectory+ 'content.html', TheDirectory))
 
 
 indexfile.write('''
@@ -36,6 +38,9 @@ indexfile.write('''
                 ''')
 indexfile.close()
 
+## END
+
+#Stub structure:
         
 '''
         <!DOCTYPE html>
@@ -46,5 +51,5 @@ indexfile.close()
         
         </body>
         </html>
-'''.format('http://192.168.1.150/video/' + cartella + '/' + 'content.html', cartella)
+'''.format('http://192.168.1.150/video/' + TheDirectory+ 'content.html', TheDirectory)
 
