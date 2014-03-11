@@ -13,6 +13,7 @@ for name in os.listdir('.'):
                
                 htmltipe = 'video/' + vidformat
                 contenuto = open(currentpath + '/' + name + '/' + 'content.html' , 'w')
+                print("Working on directory: {}".format(name))
                 contenuto.write(
                 '''
                 <!DOCTYPE html>
