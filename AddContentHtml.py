@@ -20,7 +20,7 @@ for name in os.listdir('.'):
                 <body>
                 <center>File: {0}</center>
                 <br>
-                <video width="1280" height="720" controls autoplay>
+                <video width="1920" height="1080" controls autoplay>
                   <source src="{1}" type="{2}">
                 </video>
                 
