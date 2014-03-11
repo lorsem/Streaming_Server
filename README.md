@@ -4,6 +4,7 @@ Streaming_Server
 All files needed for my small local streaming server
 
 == The Scripts ==
+
 I will soon arrange them to be better structured and more comfortable to use
 They should be run one after the other, on a directory containing video files. The script at the moment won't look
 inside directories
@@ -17,6 +18,7 @@ inside directories
                     
                     
 == The server ==
+
 The server is a standard Apache2 server. I am hosting it on a RaspberryPi connected to the local network.
 On the server, /var/www/video/index.html is the index of the videos (the one you create with Indexer.py).
 Videos are stored in /var/www/video/*directory*/video.*format*, the structure is created using Rename-MOVE.py
