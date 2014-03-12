@@ -25,9 +25,9 @@ for TheDirectory in os.listdir('.'):
     if os.path.isdir(currentpath + '/' + TheDirectory):
         if not os.path.isfile(currentpath + '/' + TheDirectory + '/indexed.dat'):
             if not TheDirectory.startswith('.'):
-                formatcartella = TheDirectory.replace(' ', '%20')
-                formatcartella = formatcartella.replace('[', '%5B')
-                formatcartella = formatcartella.replace(']', '%5D')
+                formatDir = TheDirectory.replace(' ', '%20')
+                formatDir = formatDir.replace('[', '%5B')
+                formatDir = formatDir.replace(']', '%5D')
                 
                 #Is it ok <a href="./video/*TheDirectory, etcetera..*
                 indexfile.write('''<a href="{0}">{1}</a>
