@@ -21,6 +21,8 @@ for name in os.listdir('.'):
                 <body>
                 <center>File: {0}</center>
                 <br>
+                <a href="http://192.168.1.150/video/index.html">Video Index</a>
+                <br>
                 <video width="1920" height="1080" controls autoplay>
                   <source src="{1}" type="{2}">
                 </video>
