@@ -31,7 +31,7 @@ for TheDirectory in os.listdir('.'):
                 
                 #Is it ok <a href="./video/*TheDirectory, etcetera..*
                 indexfile.write('''<a href="{0}">{1}</a>
-            <br>'''.format('http://192.168.1.150/video/' + TheDirectory+ 'content.html', TheDirectory))
+            <br>'''.format('http://192.168.1.150/video/' + TheDirectory + '/' + 'content.html', TheDirectory))
 
 
 indexfile.write('''
