@@ -1,0 +1,2 @@
+mkdir TEST && touch ./TEST/file.avi && touch ./TEST/video.mp4  && cd ./TEST && mkdir show && cd ./show && touch ep1.avi ep2.avi ep3.avi && cd ..
+
