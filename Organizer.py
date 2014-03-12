@@ -10,7 +10,7 @@ def CreateIndex():
 def AddContenthtml():
     pass
 
-def LayDownFiles(RootDir):
+def LayDownFiles(RootDir): #Works Recursively
     for name in os.listdir(RootDir):
         if not name.startswith('.') and not name.startswith('__'):
             if os.path.isfile(RootDir + '/' + name) and not os.path.isfile(RootDir + '/.IsLaid.chk'): #If it is a file and has not been laid yet
