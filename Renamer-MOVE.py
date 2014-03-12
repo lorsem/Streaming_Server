@@ -6,7 +6,7 @@ import shutil
 
 
 RootDir = os.getcwd()
-
+#Check on up-to-date version in Organizer.py
 for name in os.listdir('.'):
     if not name.startswith('.'):
         if not name.startswith('__'):
