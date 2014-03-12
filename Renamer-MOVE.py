@@ -5,7 +5,7 @@ import sys
 import shutil
 
 
-currentpath = os.getcwd()
+RootDir = os.getcwd()
 
 for name in os.listdir('.'):
     if not name.startswith('.'):
@@ -14,7 +14,7 @@ for name in os.listdir('.'):
                 #         ./test
                 vidformat = name.split('.')
                 vidformat = vidformat[len(vidformat)-1]
-                newpath = currentpath + "/" + name[:-len(vidformat)-1]
+                newpath = RootDir + "/" + name[:-len(vidformat)-1]
                 os.makedirs(newpath)
                 print ('Working on {0}...'.format(name))
                 open(newpath + '/' + 'video' + name[-1*len(vidformat) -1:] , 'a').close()
