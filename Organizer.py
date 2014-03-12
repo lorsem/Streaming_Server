@@ -7,7 +7,7 @@ import shutil
 def CreateIndex():
     pass
 
-def AddContenthtml():
+def AddContentHtml():
     pass
 
 def LayDownFiles(RootDir): #Works Recursively
@@ -24,7 +24,7 @@ def LayDownFiles(RootDir): #Works Recursively
                 print ('Working on {0}...'.format(name))
                 open(newpath + '/' + 'video' + name[-1*len(vidformat) -1:] , 'a').close()
                 try:
-                    shutil.move(name, newpath + '/' + 'video' + '.' + vidformat)
+                    shutil.move(RootDir + '/' + name, newpath + '/' + 'video' + '.' + vidformat)
                 except PermissionError:
                     print("PermissionError: file has been copied?") #If cannot move th file, shutil.move should copy it
                 except Exception:
