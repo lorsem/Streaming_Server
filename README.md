@@ -3,7 +3,7 @@ Streaming_Server
 
 All files needed for my small local streaming server
 
-== The Scripts ==
+### The Scripts
 
 I will soon arrange them to be better structured and more comfortable to use
 They should be run one after the other, on a directory containing video files. The script at the moment won't look
@@ -17,7 +17,7 @@ inside directories
                     is '192.168.1.150' (local, static ip). 
                     
                     
-== The server ==
+### The server
 
 The server is a standard Apache2 server. I am hosting it on a RaspberryPi connected to the local network.
 On the server, /var/www/video/index.html is the index of the videos (the one you create with Indexer.py).
